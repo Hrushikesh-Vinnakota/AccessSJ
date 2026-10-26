@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f3ecdf;
+  --paper: #fffaf3;
+  --ink: #1c1915;
+  --muted: #3f3832;
+  --pine: #1e4d3a;
+  --on-pine: #f7f3ea;
+  --clay: #9a3412;
+  --line: #d9cbb8;
+  --gold: #7a4e00;
+  --soft: #efe4d2;
+  --focus: #0b3a2e;
+  color-scheme: light;
+}
+
+html[data-text="large"] {
+  font-size: 125%;
+}
+
+html[data-text="largest"] {
+  font-size: 150%;
+}
+
+html[data-contrast="high"] {
+  --bg: #000000;
+  --paper: #000000;
+  --ink: #ffffff;
+  --muted: #ffffff;
+  --pine: #ffe14a;
+  --on-pine: #000000;
+  --clay: #ffe14a;
+  --line: #ffffff;
+  --gold: #ffe14a;
+  --soft: #1a1a1a;
+  --focus: #ffe14a;
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(30, 77, 58, 0.08), transparent 28rem),
+    var(--bg);
+  color: var(--ink);
+}
+
+html[data-contrast="high"] body {
+  background: #000000;
+}
+
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--pine);
+  color: var(--on-pine);
+}
+
+.access-pin {
+  background: transparent;
+  border: 0;
+}
+
+.access-pin-dot {
+  display: grid;
+  height: 40px;
+  width: 40px;
+  place-items: center;
+  border: 3px solid var(--paper);
+  border-radius: 999px;
+  background: var(--pine);
+  color: var(--on-pine);
+  font-family: Fraunces, Georgia, serif;
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+.leaflet-container {
+  background: var(--soft);
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  z-index: 0;
+}
+
+.leaflet-control-attribution {
+  background: var(--paper) !important;
+  color: var(--ink) !important;
+  font-size: 0.75rem !important;
+}
+
+.leaflet-control-attribution a {
+  color: var(--ink) !important;
+}
+
+.leaflet-bar a {
+  background: var(--paper) !important;
+  color: var(--ink) !important;
+  width: 34px !important;
+  height: 34px !important;
+  line-height: 34px !important;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

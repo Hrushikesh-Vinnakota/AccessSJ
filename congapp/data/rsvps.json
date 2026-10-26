@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "rsvps": [
+    {
+      "id": "rsvp-mvndzjse-yiu1kk",
+      "eventId": "evt-mvndzjse-migo1f",
+      "name": "Hrushi.V",
+      "createdAt": "2026-10-25T05:27:58.190Z"
+    },
+    {
+      "id": "rsvp-mvne0085-40aj2n",
+      "eventId": "evt-mvndzjse-migo1f",
+      "name": "Hrushi12",
+      "createdAt": "2026-10-25T05:28:19.493Z"
+    },
+    {
+      "id": "rsvp-mvne3is4-xc2zzj",
+      "eventId": "evt-mvne3is4-yhxw7t",
+      "name": "HrushiV",
+      "createdAt": "2026-10-25T05:31:03.508Z"
+    },
+    {
+      "id": "rsvp-mvne3xdn-kmai5m",
+      "eventId": "evt-mvne3is4-yhxw7t",
+      "name": "Hrushi",
+      "createdAt": "2026-10-25T05:31:22.427Z"
+    }
+  ]
+}

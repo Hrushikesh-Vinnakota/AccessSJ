@@ -1,0 +1,36 @@
+# All notes. The app code stays; Markdown does not.
+*.md
+docs/
+
+node_modules
+.next
+.next-harness
+out
+.dev
+.env
+.env.local
+.env.*.local
+
+# Private notes and the spoken demo. Not part of the public app.
+PERSONAL_README.md
+docs/DEMO_VOICEOVER.md
+docs/AccessSJ-demo.pptx
+scripts/build-demo-deck.mjs
+.claude/
+.cursor/
+CLAUDE.md
+AGENTS.md
+docs/IMPLEMENTATION_PLAN.md
+docs/ARCHITECTURE.md
+docs/DEV.md
+*.log
+.DS_Store
+tsconfig.tsbuildinfo
+
+# Presentations. Not part of the public app.
+presentations/
+presentation.config.json
+scripts/presentations/
+scripts/presentations.sh
+docs/*.pptx
+*.pdf
