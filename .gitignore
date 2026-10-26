@@ -1,4 +1,3 @@
-# Secrets. .env.example is only placeholders and stays in the repo.
 .env
 .env.*
 !.env.example
@@ -9,35 +8,10 @@ id_ed25519
 credentials.json
 **/secrets.json
 
-# Private notes, the spoken demo, and presentations. The public app does not use these.
-**/PERSONAL_README.md
-**/DEMO_VOICEOVER.md
-**/build-demo-deck.mjs
-**/presentations/
-**/presentation.config.json
-**/presentations.sh
-**/*.pptx
-**/*.pdf
-
-# This Mac, this editor, and AI tool files. Not the app.
 .DS_Store
 .cursor/
-**/.claude/
-**/.aider*
-**/.continue/
-**/.windsurf/
-**/CLAUDE.md
-**/AGENTS.md
-**/IMPLEMENTATION_PLAN.md
-**/ARCHITECTURE.md
-**/DEV.md
 *.code-workspace
 
-# All notes. The app code stays; Markdown does not.
-*.md
-**/docs/
-
-# Install and build output.
 node_modules/
 .next/
 .next-harness/
